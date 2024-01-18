@@ -12,12 +12,19 @@
 
             Console.WriteLine("=========== BEM VINDO A CRONÔMETRO ===========");
             Console.WriteLine("");
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
             Console.WriteLine("Como deseja cronometrar?");
             Console.WriteLine("------------------------");
-            Console.WriteLine("[S] - Cronometrar em Segundos");
-            Console.WriteLine("[M] - Cronometrar em Minutos");
+            Console.WriteLine("[S] - Cronometrar em Segundos || 10s = 10 segundos");
+            Console.WriteLine("[M] - Cronometrar em Minutos || 1m = 1 minuto");
             Console.WriteLine("[0] - Sair");
+
+            string data = Console.ReadLine().ToLower(); //opções de menu
+            char type = char.Parse(data.Substring(data.Length-1,1));
+
+            //Console.WriteLine(data);
+            //Console.WriteLine(type);
+            
         }
 
         static void Start(int time){
