@@ -1,0 +1,15 @@
+C:\Projetos\projStopWatch\bin\Debug\net8.0\projStopWatch.exe
+C:\Projetos\projStopWatch\bin\Debug\net8.0\projStopWatch.deps.json
+C:\Projetos\projStopWatch\bin\Debug\net8.0\projStopWatch.runtimeconfig.json
+C:\Projetos\projStopWatch\bin\Debug\net8.0\projStopWatch.dll
+C:\Projetos\projStopWatch\bin\Debug\net8.0\projStopWatch.pdb
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.AssemblyInfoInputs.cache
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.AssemblyInfo.cs
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.csproj.CoreCompileInputs.cache
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.sourcelink.json
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.dll
+C:\Projetos\projStopWatch\obj\Debug\net8.0\refint\projStopWatch.dll
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.pdb
+C:\Projetos\projStopWatch\obj\Debug\net8.0\projStopWatch.genruntimeconfig.cache
+C:\Projetos\projStopWatch\obj\Debug\net8.0\ref\projStopWatch.dll
