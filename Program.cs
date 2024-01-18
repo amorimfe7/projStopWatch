@@ -8,7 +8,7 @@
         }
 
         static void Menu(){
-            Console.Clear();
+            Console.Clear(); 
 
             Console.WriteLine("=========== BEM VINDO A CRONÔMETRO ===========");
             Console.WriteLine("");
