@@ -4,7 +4,7 @@
 
         static void Main (string[] args){
 
-            Console.WriteLine("Hello, World!");
+            Start();
 
         }
 
@@ -13,7 +13,13 @@
             int currentTime = 0;
 
             while(currentTime != time){
+
+                Console.Clear(); //a cada iteração limpe o histórico
+
                 currentTime++;
+                Console.WriteLine(currentTime);
+                Thread.Sleep(1000); //durma
+
             }
         }
     }
