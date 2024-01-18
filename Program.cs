@@ -18,12 +18,16 @@
             Console.WriteLine("[S] - Cronometrar em Segundos || 10s = 10 segundos");
             Console.WriteLine("[M] - Cronometrar em Minutos || 1m = 1 minuto");
             Console.WriteLine("[0] - Sair");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("Quanto tempo deseja cronometrar?");
 
             string data = Console.ReadLine().ToLower(); //opções de menu
-            char type = char.Parse(data.Substring(data.Length-1,1));
+            char type = char.Parse(data.Substring(data.Length - 1,1));
+            int time = int.Parse(data.Substring(0, data.Length - 1));
 
-            //Console.WriteLine(data);
-            //Console.WriteLine(type);
+            Console.WriteLine(type);
+            Console.WriteLine(time);
             
         }
 
