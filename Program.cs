@@ -22,7 +22,7 @@
             Console.WriteLine("");
             Console.WriteLine("Quanto tempo deseja cronometrar?");
 
-            string data = Console.ReadLine().ToLower(); //opções de menu
+            string data = Console.ReadLine().ToLower();
             
             if (data == "0"){
                 System.Environment.Exit(0);
@@ -30,14 +30,27 @@
 
             char type = char.Parse(data.Substring(data.Length - 1,1));
             int time = int.Parse(data.Substring(0, data.Length - 1));
-
             int multiplier = 1;
+
             if(type == 'm'){
                 multiplier = 60;
             } 
             
             
-            Start(time*multiplier);
+            PreStart(time*multiplier);
+        }
+
+        static void PreStart(int time){
+            Console.Clear();
+
+            Console.WriteLine("Preparar...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Apontar...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Fogo!");
+            Thread.Sleep(1700);
+
+            Start(time);
         }
 
         static void Start(int time){
@@ -45,11 +58,11 @@
 
             while(currentTime != time){
 
-                Console.Clear(); //a cada iteração limpe o histórico
+                Console.Clear();
 
                 currentTime++;
                 Console.WriteLine($"Cronometrando: {currentTime}");
-                Thread.Sleep(200); //durma
+                Thread.Sleep(1000);
             }
 
             Console.Clear();
