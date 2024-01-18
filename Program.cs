@@ -15,20 +15,29 @@
             Thread.Sleep(1000);
             Console.WriteLine("Como deseja cronometrar?");
             Console.WriteLine("------------------------");
-            Console.WriteLine("[S] - Cronometrar em Segundos || 10s = 10 segundos");
-            Console.WriteLine("[M] - Cronometrar em Minutos || 1m = 1 minuto");
+            Console.WriteLine("[S] - Segundos || 10s = 10 segundos");
+            Console.WriteLine("[M] - Minutos || 1m = 1 minuto");
             Console.WriteLine("[0] - Sair");
             Console.WriteLine("------------------------");
             Console.WriteLine("");
             Console.WriteLine("Quanto tempo deseja cronometrar?");
 
             string data = Console.ReadLine().ToLower(); //opções de menu
+            
+            if (data == "0"){
+                System.Environment.Exit(0);
+            }
+
             char type = char.Parse(data.Substring(data.Length - 1,1));
             int time = int.Parse(data.Substring(0, data.Length - 1));
 
-            Console.WriteLine(type);
-            Console.WriteLine(time);
+            int multiplier = 1;
+            if(type == 'm'){
+                multiplier = 60;
+            } 
             
+            
+            Start(time*multiplier);
         }
 
         static void Start(int time){
@@ -39,8 +48,8 @@
                 Console.Clear(); //a cada iteração limpe o histórico
 
                 currentTime++;
-                Console.WriteLine(currentTime);
-                Thread.Sleep(1000); //durma
+                Console.WriteLine($"Cronometrando: {currentTime}");
+                Thread.Sleep(200); //durma
             }
 
             Console.Clear();
@@ -48,6 +57,7 @@
             Console.WriteLine("");
             Console.WriteLine("Retornando para o Menu..");
             Thread.Sleep(1500);
+            Menu();
         }
     }
 }
