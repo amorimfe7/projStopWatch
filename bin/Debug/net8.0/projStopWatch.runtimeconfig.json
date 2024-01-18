@@ -8,5 +8,5 @@
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
     }
-  }
+  } 
 }
